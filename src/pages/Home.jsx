@@ -22,12 +22,12 @@ function Filmes() {
     console.log(data)
     return (
         <>
-        <img src="/public/Atlas1.jpg" className="w-full" alt="" />
+        <img src="/public/Atlas1.jpg" className="w-full bg-gradient-to-r from-jh1" alt="" />
         <div className="container mx-auto py-8">
       {filme.map((filme, index) => (
-        <div key={index} className="flex bg-gama1 rounded-lg shadow-md overflow-hidden mb-8">
+        <div key={index} className="flex rounded-lg shadow-xl  *: mb-8 p-12 ">
           <img src={filme.image} alt={filme.title} className="w-1/3 h-auto object-cover" />
-          <div className="p-4 w-2/3 bg-terciary-gama3">
+          <div className="p-4 w-2/3">
             <h3 className="text-2xl font-bold mb-2">{filme.title}</h3>
             <p className="text-gray-700 mb-4">{filme.description}</p>
             <button className="bg-jh1 text-white py-2 px-4 rounded hover:bg-blue-600">Ver mais</button>

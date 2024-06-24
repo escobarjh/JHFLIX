@@ -8,7 +8,7 @@ import PageNotFound from './pages/PageNotFound.jsx'
 import Contato from './pages/Contato.jsx'
 import Sobre from './pages/Sobre.jsx'
 import Home from './pages/Home.jsx'
-
+import SaibaMais from './pages/SaibaMais.jsx'
 
 
 const router = createBrowserRouter(
@@ -21,6 +21,7 @@ const router = createBrowserRouter(
         {path: "Filmes", element: <Filmes/>},
         {path: "sobre", element: <Sobre/>},
         {path: "Contato", element: <Contato/>},
+        {path: "Saiba Mais", element: <SaibaMais/>},
         {path: "*", element: <PageNotFound/>},
       ]
     }
